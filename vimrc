@@ -1,7 +1,10 @@
-syntax enable           " enable syntax processing
-let mapleader=","       " leader is comma
-colorscheme molokai     " awesome colorscheme
+execute pathogen#infect()
+set t_Co=256
+syntax on           
+filetype plugin indent on
+colorscheme lucius 
 
+let mapleader=","       " leader is comma
 set backspace=2 " make backspace work like most other apps
 set backspace=indent,eol,start
 set tabstop=4           " number of visual spaces per TAB
@@ -15,9 +18,6 @@ set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
-filetype indent on      " load filetype-specific indent files
-
-call pathogen#infect()                      " use pathogen
 
 " highlight last inserted text
 nnoremap gV `[v`]
