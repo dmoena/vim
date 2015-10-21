@@ -2,7 +2,8 @@ execute pathogen#infect()
 set t_Co=256
 syntax on           
 filetype plugin indent on
-colorscheme lucius 
+colorscheme lucius
+LuciusBlack
 
 let mapleader=","       " leader is comma
 set backspace=2 " make backspace work like most other apps
