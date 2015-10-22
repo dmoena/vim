@@ -5,7 +5,7 @@ filetype plugin indent on
 colorscheme lucius
 LuciusBlack
 
-let mapleader=","       " leader is comma
+let mapleader=" "       " leader is space
 set backspace=2 " make backspace work like most other apps
 set backspace=indent,eol,start
 set tabstop=4           " number of visual spaces per TAB
@@ -20,6 +20,10 @@ set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
+" easy navigation
+nnoremap <leader><down> <C-W><C-J>
+nnoremap <leader><up> <C-W><C-K>
+nnoremap <leader><space> <C-W><C-W>
 " highlight last inserted text
 nnoremap gV `[v`]
 " toggle gundo
