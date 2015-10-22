@@ -19,6 +19,9 @@ set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+set ignorecase          " case insensitive 
+set smartcase           " use case if any caps used
+
 
 " easy navigation
 nnoremap <leader><down> <C-W><C-J>
