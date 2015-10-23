@@ -29,6 +29,8 @@ set hidden              		" hides buffer instead of force :w before open a new f
 set visualbell                  " don't beep
 set noerrorbells                " don't beep
 
+set pastetoggle=<F2>            " enable pastemode with F2
+
 " easy navigation
 nnoremap <leader><down> <C-W><C-J>
 nnoremap <leader><up> <C-W><C-K>
