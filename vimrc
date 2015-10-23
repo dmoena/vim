@@ -5,23 +5,26 @@ filetype plugin indent on
 colorscheme lucius
 LuciusBlack
 
-let mapleader=" "       " leader is space
-set backspace=2 " make backspace work like most other apps
+let mapleader=" "       		" leader is space
+set backspace=2         		" make backspace work like most other apps
 set backspace=indent,eol,start
-set tabstop=4           " number of visual spaces per TAB
-set softtabstop=4       " number of spaces in tab when editing
-set expandtab           " tabs are spaces
-set number              " show line numbers
-set showcmd             " show command in bottom bar
-set cursorline          " highlight current line
-set wildmenu            " visual autocomplete for command menu
-set lazyredraw          " redraw only when we need to.
-set showmatch           " highlight matching [{()}]
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
-set ignorecase          " case insensitive 
-set smartcase           " use case if any caps used
-
+set tabstop=4           		" number of visual spaces per TAB
+set shiftwidth=4                " number of spaces to use for autoindenting
+set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
+set softtabstop=4       		" number of spaces in tab when editing
+set expandtab           		" tabs are spaces
+set number              		" show line numbers
+set showcmd             		" show command in bottom bar
+set cursorline          		" highlight current line
+set wildmenu            		" visual autocomplete for command menu
+set lazyredraw          		" redraw only when we need to.
+set showmatch           		" highlight matching [{()}]
+set incsearch           		" search as characters are entered
+set hlsearch            		" highlight matches
+set ignorecase          		" case insensitive 
+set smartcase           		" use case if any caps used
+set smarttab                    " insert tabs on the start of a line according to shiftwidth, not tabstop
+set hidden              		" hides buffer instead of force :w before open a new file
 
 " easy navigation
 nnoremap <leader><down> <C-W><C-J>
